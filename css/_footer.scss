@@ -1,0 +1,15 @@
+.footer {
+    height: 60px;
+    background: #06001D;
+    z-index: 500;
+}
+.footer__row {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.footer__text {
+    font-size: 16px;
+    line-height: 42px;
+    color: #FFFFFF;
+}

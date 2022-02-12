@@ -1,0 +1,209 @@
+.information {
+    margin-bottom: 130px;
+    position: relative;
+    &::before{
+        content: "";
+        position: absolute;
+        z-index: -1;
+        top: 0px;
+        left: 0px;
+        width: 100px;
+        height: 500px;
+        display: block;
+        background: url('../img/icon/information-before.svg') left center no-repeat;
+        background-size: 100px 500px;
+    }
+    &::after{
+        content: "";
+        position: absolute;
+        z-index: -1;
+        top: 240px;
+        right: 60px;
+        width: 47px;
+        height: 47px;
+        display: block;
+        background: url('../img/icon/information-after.svg') right top no-repeat;
+        background-size: 47px 47px;
+    }
+}
+.information__title {
+    display: flex;
+    align-items: center;
+    margin-bottom: 55px;
+}
+.information-title__row {
+    display: flex;
+    flex-direction: column;
+    margin-right: 15px;
+}
+.information-title__text {
+    font-weight: bold;
+    font-size: 56px;
+    line-height: 56px;
+    margin-bottom: 16px;
+    position: relative;
+    &::before{
+        content: "";
+        position: absolute;
+        z-index: -1;
+        top: -15px;
+        left: -47px;
+        width: 89px;
+        height: 77px;
+        display: block;
+        background: url('../img/home_v2/Rhombus.svg') left center no-repeat;
+        background-size: 89px 77px ;
+    }
+}
+.information-title__text--active {
+    font-size: 56px;
+    line-height: 37px;
+}
+.information-title__box {
+    background: rgba(255, 255, 255, 0.95);
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.12);
+    backdrop-filter: blur(30px);
+    border-radius: 15px;
+    padding: 32px 20px 32px 26px;
+    margin-right: 0px;
+}
+.information-title-box__text {
+    font-weight: 500;
+    font-size: 22px;
+    line-height: 37px;
+    color: #0D2A6B;
+}
+.information__subtitle {
+    font-weight: bold;
+    font-size: 32px;
+    line-height: 37px;
+    color: #0D2A6B;
+    text-align: center;
+    margin-bottom: 55px;
+}
+.information__items {
+}
+.information-items__row {
+    display: flex;
+    justify-content: space-between;
+}
+.information__item {
+    flex: 0 1 29%;
+}
+.information-item__row {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.information-item__image {
+    margin-bottom: 30px;
+}
+.information-item__text {
+    font-weight: 500;
+    font-size: 17px;
+    line-height: 26px;
+    text-align: center;
+    color: #0D2A6B;
+}
+
+@media (max-width: 1000px){
+    .information {
+        &::before{
+            display: none;
+        }
+        &::after{
+            display: none;
+        }
+    }
+}
+@media (max-width: 765px){
+    .information {
+        &::before{
+            display: none;
+        }
+        &::after{
+            content: "";
+            position: absolute;
+            z-index: -1;
+            top: 100px;
+            right: 10px;
+            width: 35px;
+            height: 31px;
+            display: block;
+            background: url('../img/icon/information-after.svg') right top no-repeat;
+            background-size: 35px 31px;
+        }
+    }
+    .information__title {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 20px;
+    }
+    .information-title__row {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 12px;
+    }
+    .information-title__text {
+        font-size: 27px;
+        margin-bottom: 0px;
+        &::before{
+            content: "";
+            position: absolute;
+            z-index: -1;
+            top: 5px;
+            left: -15px;
+            width: 47px;
+            height: 39px;
+            display: block;
+            background: url('../img/home_v2/Rhombus.svg') left center no-repeat;
+            background-size: 47px 39px ;
+        }
+    }
+    .information-title__text--active {
+        font-size: 27px;
+    }
+    .information-title__box {
+        background: rgba(255, 255, 255, 0.95);
+        box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.12);
+        backdrop-filter: blur(30px);
+        border-radius: 15px;
+        padding: 20px;
+        margin-right: 0px;
+        margin-bottom: 20px;
+        z-index: -1;
+    }
+    .information-title-box__text {
+        font-size: 18px;
+        line-height: 28px;
+    }
+    .information__subtitle {
+        font-size: 18px;
+        margin-bottom: 17px;
+    }
+    .information__items {
+    }
+    .information-items__row {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .information__item {
+        flex: 0 1 29%;
+    }
+    .information-item__row {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .information-item__image {
+        margin-bottom: 11px;
+    }
+    .information-item__text {
+        font-size: 16px;
+        line-height: 24px;
+    }
+}

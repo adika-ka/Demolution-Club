@@ -1,0 +1,453 @@
+    .content__main{
+        position: relative;
+        &::after{
+            content: "";
+            position: absolute;
+            z-index: -1;
+            top: 35px;
+            right: 0px;
+            width: 81px;
+            height: 250px;
+            display: block;
+            background: url('../img/vector-demolution.svg') right top no-repeat;
+            background-size: 81px 250px;
+        }
+    }
+    .demolution{
+        margin-bottom: 25px;
+    }
+    .demolution__row{
+        display: flex;
+    }
+    .demolution__image{
+        margin: -11% 0 0 -35%;
+    }
+    .demolution-image__768{
+        display: none;
+    }
+    .demolution-image__320{
+        display: none;
+    }
+    .demolution__body{
+        margin: 0 0 0 -30%;
+    }
+    .demolution-body__row{
+        display: flex;
+        flex-direction: column;
+    }
+    .demolution__info{
+
+    }
+    .demolution-info__row{
+        display: flex;
+        flex-direction: column;
+    }
+    .demolution-info__title{
+        margin-bottom: 42px;
+    }
+    .demolution-info-title__row{
+        display: flex;
+        align-items: center;
+    }
+    .demolution-info-title__text{
+        font-size: 56px;
+        line-height: 28px;
+        margin-right: 18px;
+        position: relative;
+        &::before{
+            content: "";
+            position: absolute;
+            z-index: -1;
+            top: -35px;
+            left: -48px;
+            width: 105px;
+            height: 91px;
+            display: block;
+            background: url('../img/home_v2/Rhombus.svg') left center no-repeat;
+            background-size: 105px 91px ;
+        }
+    }
+    .title{
+        color: #0D2A6B;
+        font-weight: bold;
+        text-transform: uppercase;
+    }
+    .demolution-info-title__text--active{
+        font-size: 56px;
+        line-height: 37px;
+    }
+    .title-active{
+        font-weight: bold;
+        text-transform: uppercase;        
+        opacity: 0.94;
+        color: rgba(87, 97, 215, 1);
+    }
+    .demolution-info__subtitle{
+        font-weight: 600;
+        font-size: 28px;
+        line-height: 37px;
+        color: #0D2A6B;
+        margin-bottom: 26px;
+    }
+    .demolution-info__text{
+        font-size: 16px;
+        line-height: 28px;
+        color: #0D2A6B;
+        p{
+            margin-bottom: 20px;
+        }
+        & p:last-child{
+                margin-bottom: 50px;
+        }
+    }
+    .demolution__admin{
+        flex: 1 1 99%;
+    }
+    .demolution-admin__row{
+        display: flex;
+        flex-direction: column;
+    }
+    .demolution-admin__title{
+        font-size: 26px;
+        line-height: 42px;
+    }
+    .demolution-admin-title__row{
+
+    }
+    .demolution-admin-title__text{
+        margin-bottom: 25px;
+    }
+    .demolution-admin-title__text--active {
+        position: relative;
+        &::after{
+            content: "";
+            position: absolute;
+            z-index: -1;
+            top: -35px;
+            right: -45px;
+            width: 105px;
+            height: 91px;
+            display: block;
+            background: url('../img/home_v2/Rhombus.svg') left center no-repeat;
+            background-size: 105px 91px ;
+        }
+    }
+    .demolution-admin__items{
+
+    }
+    .demolution-admin-items__row{
+        display: flex;
+    }
+    .demolution-admin-items__left{
+        display: flex;
+        flex-direction: column;
+    }
+    .demolution-admin-items__right{
+        display: flex;
+        flex-direction: column;
+    }
+    .demolution-admin__item{
+
+    }
+    .demolution-admin-item__row{
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        margin-bottom: 25px;
+        img{
+            margin-right: 13px;
+        }
+    }
+    .demolution-admin-item__text{
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 42px;
+        color: #0D2A6B;
+    }
+    @media (max-width: 1500px){
+        .demolution{
+            margin-bottom: 0px;
+        }
+        .demolution__image{
+            display: none;
+        }
+        .demolution-image__768{
+            display: inline-block;
+            margin: 0% -20% 0 0%;
+        }
+        .demolution__body{
+            margin: 0;
+        }
+        .demolution-info__text{
+            padding: 0 20px 0 0;
+        }
+    }
+    @media (max-width: 1000px){
+        .content__main{
+            &::after{
+                top: -90px;
+                right: -20px;
+                width: 81px;
+                height: 108px;
+                background: url('../img/icon/demolution-after.svg') right top no-repeat;
+                background-size: 81px 108px;
+            }
+        }
+        .demolution{
+            margin-bottom: 0px;
+            position: relative;
+            &::before{
+                content: "";
+                position: absolute;
+                z-index: -1;
+                bottom: 0px;
+                left: -20px;
+                width: 81px;
+                height: 108px;
+                display: block;
+                background: url('../img/icon/demolution-before.svg') right top no-repeat;
+                background-size: 81px 108px;
+            }
+        }
+        .demolution__row{
+            display: flex;
+        }
+        .demolution__image{
+            // margin: -11% 0 0 -35%;
+            display: none;
+        }
+        .demolution-image__768{
+            display: inline-block;
+            margin: 0% -30% 0 0%;
+        }
+        .demolution-info__title{
+            margin-bottom: 26px;
+        }
+        .demolution-info-title__text{
+            font-size: 36px;
+            margin-right: 5px;
+            &::before{
+                top: -15px;
+                left: -20px;
+                width: 63px;
+                height: 55px;
+                background-size: 63px 55px ;
+            }
+        }
+        .demolution-info-title__text--active{
+            font-size: 36px;
+        }
+        .demolution-info__subtitle{
+            font-size: 18px;
+            line-height: 24px;
+            margin-bottom: 8px;
+        }
+        .demolution-info__text{
+            font-size: 14px;
+            line-height: 24px;
+            p{
+                margin-bottom: 10px;
+            }
+        }
+        .demolution-admin__title{
+            font-size: 20px;
+            line-height: 20px;  
+        }
+        .demolution-admin-title__text{
+            margin-bottom: 20px;
+        }
+        .demolution-admin-title__text--active {
+            &::after{
+                top: -5px;
+                right: -15px;
+                width: 43px;
+                height: 34px;
+                background-size: 43px 34px ;
+            }
+        }
+        .demolution-admin-item__row{
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+            margin-bottom: 16px;
+        }
+        .demolution-admin-item__text{
+            font-size: 14px;
+        }
+    }
+    @media (max-width: 765px){
+        .content__main{
+            &::after{
+                top: 0px;
+                right: -20px;
+                width: 81px;
+                height: 108px;
+                background-size: 81px 108px;
+            }
+        }
+        .demolution{
+            margin-bottom: 25px;
+            margin: 0 auto;
+            position: relative;
+            &::before{
+                content: "";
+                position: absolute;
+                z-index: -1;
+                bottom: -60px;
+                left: -20px;
+                width: 81px;
+                height: 108px;
+                display: block;
+                background: url('../img/icon/demolution-before.svg') right top no-repeat;
+                background-size: 81px 108px;
+            }
+        }
+        .demolution__row{
+            display: flex;
+            flex-direction: column;
+            justify-content:center;
+            align-items: center;
+        }
+        .demolution__image{
+            margin: 0;
+            display: none;
+        }
+        .demolution-image__768{
+            display: none;
+        }
+        .demolution-image__320{
+            display: inline-block;
+            text-align: center;
+            order: 2;
+            margin: -10% auto;
+            img{
+                max-width: 600px;
+            }
+        }
+        .demolution__body{
+            margin: 0 auto;
+            padding: 0 15px 0 0px;
+            order: 1;
+        }
+        .demolution-body__row{
+            display: flex;
+            flex-direction: column;
+            justify-content:center;
+            align-items: center;
+        }
+        .demolution__info{
+    
+        }
+        .demolution-info__row{
+            display: flex;
+            flex-direction: column;
+            justify-content:center;
+            align-items: center;
+        }
+        .demolution-info__title{
+            margin-bottom: 24px;
+        }
+        .demolution-info-title__row{
+            display: flex;
+            align-items: center;
+        }
+        .demolution-info-title__text{
+            font-size: 27px;
+            line-height: 37px;
+            margin-right: 7px;
+            &::before{
+                top: -5px;
+                left: -15px;
+                width: 46px;
+                height: 39px;
+                background-size: 46px 39px ;
+            }
+        }
+        .demolution-info-title__text--active{
+            font-size: 27px;
+            line-height: 37px;
+        }
+        .demolution-info__subtitle{
+            font-size: 18px;
+            line-height: 24px;
+            margin-bottom: 20px;
+            padding: 0 15px 0 15px;
+        }
+        .demolution-info__text{
+            font-size: 14px;
+            line-height: 24px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding: 0 15px 0 15px;
+            p{
+                margin-bottom: 20px;
+            }
+            & p:last-child{
+                    margin-bottom: 30px;
+            }
+        }
+        .demolution__admin{
+            order: 3;
+        }
+        .demolution-admin__row{
+            display: flex;
+            flex-direction: column;
+        }
+        .demolution-admin__title{
+            font-size: 16px;
+            line-height: 20px;
+        }
+        .demolution-admin-title__row{
+    
+        }
+        .demolution-admin-title__text{
+            margin-bottom: 25px;
+        }
+        .demolution-admin-title__text--active {
+            position: relative;
+            &::after{
+                content: "";
+                position: absolute;
+                z-index: -1;
+                top: -7px;
+                right: -10px;
+                width: 37px;
+                height: 29px;
+                display: block;
+                background: url('../img/home_v2/Rhombus.svg') left center no-repeat;
+                background-size: 37px 29px ;
+            }
+        }
+        .demolution-admin__items{
+    
+        }
+        .demolution-admin-items__row{
+            display: flex;
+            flex-direction: column;
+        }
+        .demolution-admin-items__left{
+            display: flex;
+            flex-direction: column;
+        }
+        .demolution-admin-items__right{
+            display: flex;
+            flex-direction: column;
+        }
+        .demolution-admin__item{
+
+        }
+        .demolution-admin-item__row{
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+            margin-bottom: 16px;
+            img{
+                margin-right: 20px;
+            }
+        }
+        .demolution-admin-item__text{
+            font-size: 16px;
+        }
+    }

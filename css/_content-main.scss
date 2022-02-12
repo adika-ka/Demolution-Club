@@ -1,0 +1,101 @@
+.content__main{
+    z-index: 2;
+    background-color: #fff;
+    position: relative;
+    padding: 0px 0 0 0;
+    &::before{
+        content:"";
+        display: block;
+        position: absolute;
+        top: -5%;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        z-index: -5;
+        background: url('../img/bg.png')0 0/cover no-repeat;
+    }
+}
+// @media (min-width:4300px) and (max-width: 4900px){
+//     .content__main{
+//         &::before{
+//             top: -100%;
+
+//         }
+//         div{
+//             z-index: 200;
+//         }
+//     }
+// }
+// @media (min-width:3800px) and (max-width: 4300px){
+//     .content__main{
+//         &::before{
+//             top: -81%;
+
+//         }
+//         div{
+//             z-index: 200;
+//         }
+//     }
+// }
+// @media (min-width:3150px) and (max-width: 3800px){
+//     .content__main{
+//         &::before{
+//             top: -65%;
+
+//         }
+//         div{
+//             z-index: 200;
+//         }
+//     }
+// }
+// @media (min-width:2400px) and (max-width: 3150px){
+//     .content__main{
+//         &::before{
+//             top: -48%;
+
+//         }
+//         div{
+//             z-index: 200;
+//         }
+//     }
+// }
+// @media (min-width:1751px) and (max-width: 2400px){
+//     .content__main{
+//         &::before{
+//             top: -29%;
+
+//         }
+//         div{
+//             z-index: 200;
+//         }
+//     }
+// }
+@media (min-width:1340px) and (max-width: 1751px){
+    .content__main{
+        &::before{
+            top: -3%;
+
+        }
+        div{
+            z-index: 200;
+        }
+    }
+}
+@media (min-width:768px) and (max-width: 1340px){
+    .content__main{
+        padding: 0px 0 0 0;
+        &::before{
+            top: -2%;
+        }
+        background: url('../img/768.png')0 0/cover no-repeat;
+    }
+}
+@media (min-width:300px) and (max-width: 768px){
+    .content__main{
+        padding: 0px 0 0 0;
+        &::before{
+            top: -1.7%;
+        }
+        background: url('../img/320.png')0 0/cover no-repeat;
+    }
+}

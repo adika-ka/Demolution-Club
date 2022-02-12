@@ -1,0 +1,644 @@
+.mac {
+    padding: 100px 0 0px 0;
+    position: relative;
+    background: url("../img/mac/bg-top.png") top center no-repeat;
+    margin-bottom: 130px;
+    &::before{
+        content: "";
+        position: absolute;
+        display: block;
+        background: url("../img/mac/Vector-left.svg") left top no-repeat;
+        top: 0;
+        left: -168px;
+        background-size: 468px 348px;
+        width: 468px;
+        height: 348px;
+    }
+    &::after{
+        content: "";
+        position: absolute;
+        display: block;
+        background: url("../img/mac/Vector-right.svg") right bottom no-repeat;
+        bottom: 0;
+        right: -100px;
+        background-size: 276px 205px;
+        width: 276px;
+        height: 205px;
+    }
+}
+.mac__row {
+    display: flex;
+    flex-direction: column;
+}
+.mac-main__content {
+}
+.mac-main__image {
+    position: relative;
+    margin: 0 0 0 -50px;
+}
+.mac-main__image-loly{
+    display: none;
+}
+.mac-main__items{
+}
+.mac-main-items__row{
+    display: flex;
+    justify-content: space-between;
+}
+.mac-main__sale {
+    position: absolute;
+    top: 43.7%;
+    left: 26%;
+    width: 22.5%;
+    background: rgba(255, 255, 255, 0.95);
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.12);
+    backdrop-filter: blur(30px);
+    border-radius: 15px;
+    padding: 38px 0px 25px 36px;
+}
+.mac-main-sale__row {
+    display: flex;
+    flex-direction: column;
+}
+.mac-main-sale__icon {
+    margin-bottom: 20px;
+}
+.mac-main-sale__title {
+    margin-bottom: 20px;
+}
+.mac-title {
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 30px;
+    text-transform: uppercase;
+    color: #0D2A6B;
+}
+.blue{
+    color: #3990F9;
+}
+.mac-text {
+    font-size: 18px;
+    line-height: 30px;
+    color: #0D2A6B;
+}
+.violet {
+        color: #864DFF;
+}
+.mac-main__bonus {
+    position: absolute;
+    top: 26%;
+    right: 11.5%;
+    width: 26%;
+    background: rgba(255, 255, 255, 0.95);
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.12);
+    backdrop-filter: blur(30px);
+    border-radius: 15px;
+    padding: 29px 21px 25px 42px;
+}
+.mac-main-bonus__row {
+    display: flex;
+    flex-direction: column;
+}
+.mac-main-bonus__icon {
+    margin-bottom: 20px;
+}
+.mac-main-bonus__title {
+    margin-bottom: 20px;
+}
+.mac__education {
+    margin-top: -100px;
+    padding: 0 0 0 100px;
+}
+.mac-education__row {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.mac-education__text {
+    font-weight: 500;
+    font-size: 25px;
+    line-height: 37px;
+    color: #0D2A6B;
+    margin-bottom: 30px;
+    span{
+        color: #864DFF;
+        text-transform: uppercase;
+        font-weight: 600;
+        position: relative;
+        &::after{
+            content: "";
+            position: absolute;
+            top: -20px;
+            right: -25px;
+            width: 73px;
+            height: 61px;
+            display: block;
+            background: url('../img/home_v2/Rhombus.svg') left center no-repeat;
+            background-size: 73px 61px ;
+            z-index: -1;
+        }
+    }
+}
+.mac-education__btn {
+    background: linear-gradient(122.93deg, #7345D3 -137.34%, #5470F0 38.32%, #1858CD 129.02%);
+    box-shadow: 0px 9px 19px rgba(0, 0, 0, 0.15);
+    border-radius: 60px;
+    position: relative;
+    a{
+        font-weight: 600;
+        font-size: 16px;
+        line-height: 30px;
+        color: #FFFFFF;
+        padding: 10px 60px;
+    }
+    &::before{
+        content: "";
+        position: absolute;
+        top: 30%;
+        left: -80px;
+        display: block;
+        width: 11px;
+        height: 11px;
+        border-radius: 50%;
+        background: linear-gradient(122.93deg, #7DC6FD 0%, #548EF7 30.3%, #A728DA 100%);
+    }
+    &::after{
+        content: "";
+        position: absolute;
+        top: 30%;
+        right: -80px;
+        display: block;
+        width: 11px;
+        height: 11px;
+        border-radius: 50%;
+        background: linear-gradient(122.93deg, #7DC6FD 0%, #548EF7 30.3%, #A728DA 100%);
+    }
+}
+@media (max-width:1150px){
+    .mac {
+        padding: 50px 0 0px 0;
+        margin-bottom: 50px;
+        &::before{
+            display: none;
+        }
+        &::after{
+            bottom: 0;
+            right: -50px;
+            background-size: 139px 104px;
+            width: 139px;
+            height: 104px;
+        }
+    }
+    .mac-main__image {
+        display: none;
+        margin: 0;
+    }
+    .mac-main__image-loly{
+        display: inline-block;
+        margin: 0px 0 0 20%;
+        position: relative;
+    }
+    .mac-main__sale {
+        position: absolute;
+        top: 45%;
+        left: 20%;
+        width: 25%;
+        padding: 25px 0px 15px 25px;
+    }
+    .mac-main-sale__icon {
+        margin-bottom: 5px;
+    }
+    .mac-main-sale__title {
+        margin-bottom: 5px;
+    }
+    .mac-title {
+        font-size: 14px;
+        line-height: 30px;
+    }
+    .mac-text {
+        font-size: 11px;
+        line-height: 20px;
+    }
+    .mac-main__bonus {
+        top: 22%;
+        right: 11%;
+        width: 32%;
+        padding: 25px 11px 15px 25px;
+    }
+    .mac-main-bonus__icon {
+        margin-bottom: 5px;
+    }
+    .mac-main-bonus__title {
+        margin-bottom: 5px;
+    }
+    .mac__education {
+        margin-top: -50px;
+        padding: 0 0 0 0px;
+    }
+    .mac-education__text {
+        font-size: 20px;
+        line-height: 29px;
+        margin-bottom: 15px;
+        span{
+            &::after{
+                top: -7px;
+                right: -16px;
+                width: 37px;
+                height: 33px;
+                background-size: 37px 33px ;
+            }
+        }
+    }
+    .mac-education__btn {
+        a{
+            font-size: 16px;
+            line-height: 30px;
+            padding: 10px 30px;
+        }
+        &::before{
+            top: 30%;
+            left: -30px;
+        }
+        &::after{
+            top: 30%;
+            right: -30px;
+        }
+    }
+}
+@media (max-width:850px){
+    .mac {
+        padding: 100px 0 0px 0;
+        margin-bottom: 50px;
+        &::before{
+            display: none;
+        }
+        &::after{
+            bottom: 0;
+            right: -50px;
+            background-size: 139px 104px;
+            width: 139px;
+            height: 104px;
+        }
+    }
+    .mac-main__image {
+        display: none;
+        margin: 0;
+    }
+    .mac-main__image-loly{
+        display: inline-block;
+        margin: 0px 0 0 0%;
+        position: relative;
+    }
+    .mac-main__sale {
+        position: absolute;
+        top: 45%;
+        left: 10%;
+        width: 25%;
+        padding: 25px 0px 15px 25px;
+    }
+    .mac-main-sale__icon {
+        margin-bottom: 5px;
+    }
+    .mac-main-sale__title {
+        margin-bottom: 5px;
+    }
+    .mac-title {
+        font-size: 14px;
+        line-height: 30px;
+    }
+    .mac-text {
+        font-size: 11px;
+        line-height: 20px;
+    }
+    .mac-main__bonus {
+        top: 32%;
+        right: 15%;
+        width: 32%;
+        padding: 25px 11px 15px 25px;
+    }
+    .mac-main-bonus__icon {
+        margin-bottom: 5px;
+    }
+    .mac-main-bonus__title {
+        margin-bottom: 5px;
+    }
+    .mac__education {
+        margin-top: -50px;
+        padding: 0 0 0 0px;
+    }
+    .mac-education__text {
+        font-size: 20px;
+        line-height: 29px;
+        margin-bottom: 15px;
+        text-align: center;
+        span{
+            &::after{
+                top: -7px;
+                right: -16px;
+                width: 37px;
+                height: 33px;
+                background-size: 37px 33px ;
+            }
+        }
+    }
+    .mac-education__btn {
+        a{
+            font-size: 16px;
+            line-height: 30px;
+            padding: 10px 30px;
+        }
+        &::before{
+            top: 30%;
+            left: -30px;
+        }
+        &::after{
+            top: 30%;
+            right: -30px;
+        }
+    }
+}
+@media (max-width:700px){
+    .mac {
+        padding: 50px 0 0px 0;
+        margin-bottom: 50px;
+        &::before{
+            display: none;
+        }
+        &::after{
+            bottom: 0;
+            right: -50px;
+            background-size: 139px 104px;
+            width: 139px;
+            height: 104px;
+        }
+    }
+    .mac-main__image {
+        display: none;
+        margin: 0;
+    }
+    .mac-main__image-loly{
+        display: inline-block;
+        margin: 0px 0 0 -10%;
+        position: relative;
+    }
+    .mac-main__sale {
+        position: absolute;
+        top: 30%;
+        left: 15%;
+        width: 25%;
+        padding: 25px 0px 15px 25px;
+    }
+    .mac-main-sale__icon {
+        margin-bottom: 5px;
+    }
+    .mac-main-sale__title {
+        margin-bottom: 5px;
+    }
+    .mac-title {
+        font-size: 14px;
+        line-height: 30px;
+    }
+    .mac-text {
+        font-size: 11px;
+        line-height: 20px;
+    }
+    .mac-main__bonus {
+        top: 15%;
+        right: 5%;
+        width: 32%;
+        padding: 25px 11px 15px 25px;
+    }
+    .mac-main-bonus__icon {
+        margin-bottom: 5px;
+    }
+    .mac-main-bonus__title {
+        margin-bottom: 5px;
+    }
+    .mac__education {
+        margin-top: -50px;
+        padding: 0 0 0 0px;
+    }
+    .mac-education__text {
+        font-size: 20px;
+        line-height: 29px;
+        margin-bottom: 15px;
+        text-align: center;
+        span{
+            &::after{
+                top: -7px;
+                right: -16px;
+                width: 37px;
+                height: 33px;
+                background-size: 37px 33px ;
+            }
+        }
+    }
+    .mac-education__btn {
+        a{
+            font-size: 16px;
+            line-height: 30px;
+            padding: 10px 30px;
+        }
+        &::before{
+            top: 30%;
+            left: -30px;
+        }
+        &::after{
+            top: 30%;
+            right: -30px;
+        }
+    }
+}
+@media (max-width:650px){
+    .mac {
+        padding: 120px 0 0px 0;
+        margin-bottom: 50px;
+        &::before{
+            display: none;
+        }
+        &::after{
+            display: none;
+        }
+    }
+    .mac-main__image {
+        display: none;
+        margin: 0;
+    }
+    .mac-main__image-loly{
+        display: inline-block;
+        margin: 0px 0 0 -15%;
+        position: relative;
+    }
+    .mac-main__sale {
+        position: absolute;
+        top: 7%;
+        left: 20%;
+        width: 60%;
+        padding: 25px 0px 15px 25px;
+    }
+    .mac-main-sale__icon {
+        margin-bottom: 5px;
+    }
+    .mac-main-sale__title {
+        margin-bottom: 5px;
+    }
+    .mac-title {
+        font-size: 14px;
+        line-height: 30px;
+    }
+    .mac-text {
+        font-size: 11px;
+        line-height: 20px;
+    }
+    .mac-main__bonus {
+        top: 58%;
+        right: 20%;
+        width: 60%;
+        padding: 25px 11px 15px 25px;
+    }
+    .mac-main-bonus__icon {
+        margin-bottom: 5px;
+    }
+    .mac-main-bonus__title {
+        margin-bottom: 5px;
+    }
+    .mac__education {
+        margin-top: -0px;
+        padding: 150px 0 0 0px;
+    }
+    .mac-education__text {
+        font-size: 20px;
+        line-height: 29px;
+        margin-bottom: 15px;
+        text-align: center;
+        width: 50%;
+        span{
+            &::after{
+                top: -7px;
+                right: -16px;
+                width: 37px;
+                height: 33px;
+                background-size: 37px 33px ;
+            }
+        }
+    }
+    .mac-education__btn {
+        padding: 20px 30px;
+        a{
+            font-size: 16px;
+            line-height: 30px;
+            padding: 30px 30px;
+        }
+        &::before{
+            top: 45%;
+            left: -30px;
+        }
+        &::after{
+            top: 45%;
+            right: -30px;
+        }
+    }
+}
+@media (max-width:600px){
+    .mac-main__image-loly{
+        display: inline-block;
+        margin: 0px 0 0 -20%;
+        position: relative;
+    }
+}
+@media (max-width:550px){
+    .mac-main__image-loly{
+        display: inline-block;
+        margin: 0px 0 0 -30%;
+        position: relative;
+    }
+}
+@media (max-width:510px){
+    .mac-main__image-loly{
+        display: inline-block;
+        margin: 0px 0 0 0%;
+        position: relative;
+        img{
+            width: 90%;
+            padding-top:70px ;
+        }
+    }
+    .mac-main__sale {
+        position: absolute;
+        top: 7%;
+        left: 15%;
+        width: 70%;
+        padding: 25px 0px 15px 25px;
+    }
+    .mac-main__bonus {
+        top: 52%;
+        right: 15%;
+        width: 70%;
+        padding: 25px 11px 15px 25px;
+    }
+    .mac__education {
+        margin-top: -0px;
+        padding: 200px 0 0 0px;
+    }
+    .mac-education__text {
+        font-size: 20px;
+        line-height: 29px;
+        margin-bottom: 15px;
+        text-align: center;
+        width: 90%;
+        span{
+            &::after{
+                top: -7px;
+                right: -16px;
+                width: 37px;
+                height: 33px;
+                background-size: 37px 33px ;
+            }
+        }
+    }
+}
+@media (max-width:400px){
+    .mac-main__image-loly{
+        display: inline-block;
+        margin: 0px 0 0 0%;
+        position: relative;
+        img{
+            width: 90%;
+            padding-top:70px ;
+        }
+    }
+    .mac-main__sale {
+        position: absolute;
+        top: 9%;
+        left: 15%;
+        width: 70%;
+        padding: 25px 0px 15px 25px;
+    }
+    .mac-main__bonus {
+        top: 48%;
+        right: 15%;
+        width: 70%;
+        padding: 25px 11px 15px 25px;
+    }
+    .mac__education {
+        margin-top: -0px;
+        padding: 200px 0 0 0px;
+    }
+    .mac-education__text {
+        font-size: 20px;
+        line-height: 29px;
+        margin-bottom: 15px;
+        text-align: center;
+        width: 90%;
+        span{
+            &::after{
+                top: -7px;
+                right: -16px;
+                width: 37px;
+                height: 33px;
+                background-size: 37px 33px ;
+            }
+        }
+    }
+}
